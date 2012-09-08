@@ -13,17 +13,21 @@
 @end
 
 @implementation ViewController
+@synthesize imageView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    // appears that this defaults to @2x automatically
+    UIImage *image = [UIImage imageNamed: @"Default.png"];
+    [imageView setImage:image];
 }
 
 - (void)viewDidUnload
 {
+    [self setImageView:nil];
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

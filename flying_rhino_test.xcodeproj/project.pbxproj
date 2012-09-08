@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		884D3CCA15FB9E9F00E4EC31 /* icon_appstore_orig.png in Resources */ = {isa = PBXBuildFile; fileRef = 884D3CC515FB9E9F00E4EC31 /* icon_appstore_orig.png */; };
+		884D3CCB15FB9E9F00E4EC31 /* icon_hirez_orig.png in Resources */ = {isa = PBXBuildFile; fileRef = 884D3CC615FB9E9F00E4EC31 /* icon_hirez_orig.png */; };
+		884D3CCC15FB9E9F00E4EC31 /* icon_lowrez_orig.png in Resources */ = {isa = PBXBuildFile; fileRef = 884D3CC715FB9E9F00E4EC31 /* icon_lowrez_orig.png */; };
+		884D3CD015FB9EB500E4EC31 /* icon_lowrez.png in Resources */ = {isa = PBXBuildFile; fileRef = 884D3CCF15FB9EB500E4EC31 /* icon_lowrez.png */; };
+		884D3CD215FB9EC300E4EC31 /* icon_hirez.png in Resources */ = {isa = PBXBuildFile; fileRef = 884D3CD115FB9EC300E4EC31 /* icon_hirez.png */; };
+		884D3CD415FB9EE800E4EC31 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 884D3CD315FB9EE800E4EC31 /* Default.png */; };
+		884D3CD615FB9EF100E4EC31 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 884D3CD515FB9EF100E4EC31 /* Default@2x.png */; };
 		88557CBD15F0A10F00D3E6D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88557CBC15F0A10F00D3E6D0 /* UIKit.framework */; };
 		88557CBF15F0A10F00D3E6D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88557CBE15F0A10F00D3E6D0 /* Foundation.framework */; };
 		88557CC115F0A10F00D3E6D0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88557CC015F0A10F00D3E6D0 /* CoreGraphics.framework */; };
@@ -15,10 +22,19 @@
 		88557CCD15F0A10F00D3E6D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88557CCC15F0A10F00D3E6D0 /* AppDelegate.m */; };
 		88557CD015F0A10F00D3E6D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88557CCF15F0A10F00D3E6D0 /* ViewController.m */; };
 		88557CD315F0A10F00D3E6D0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88557CD115F0A10F00D3E6D0 /* ViewController.xib */; };
+		886E885D15FB9FFE00925EE4 /* splash_hirez_orig.png in Resources */ = {isa = PBXBuildFile; fileRef = 886E885B15FB9FFE00925EE4 /* splash_hirez_orig.png */; };
+		886E885E15FB9FFE00925EE4 /* splash_lowrez_orig.png in Resources */ = {isa = PBXBuildFile; fileRef = 886E885C15FB9FFE00925EE4 /* splash_lowrez_orig.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		88557CB815F0A10F00D3E6D0 /* flying_rhino_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = flying_rhino_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		884D3CC515FB9E9F00E4EC31 /* icon_appstore_orig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_appstore_orig.png; sourceTree = "<group>"; };
+		884D3CC615FB9E9F00E4EC31 /* icon_hirez_orig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_hirez_orig.png; sourceTree = "<group>"; };
+		884D3CC715FB9E9F00E4EC31 /* icon_lowrez_orig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_lowrez_orig.png; sourceTree = "<group>"; };
+		884D3CCF15FB9EB500E4EC31 /* icon_lowrez.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_lowrez.png; sourceTree = "<group>"; };
+		884D3CD115FB9EC300E4EC31 /* icon_hirez.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_hirez.png; sourceTree = "<group>"; };
+		884D3CD315FB9EE800E4EC31 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		884D3CD515FB9EF100E4EC31 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		88557CB815F0A10F00D3E6D0 /* Flying Rhino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flying Rhino.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		88557CBC15F0A10F00D3E6D0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		88557CBE15F0A10F00D3E6D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		88557CC015F0A10F00D3E6D0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -31,6 +47,8 @@
 		88557CCE15F0A10F00D3E6D0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		88557CCF15F0A10F00D3E6D0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		88557CD215F0A10F00D3E6D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		886E885B15FB9FFE00925EE4 /* splash_hirez_orig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_hirez_orig.png; sourceTree = "<group>"; };
+		886E885C15FB9FFE00925EE4 /* splash_lowrez_orig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_lowrez_orig.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +68,10 @@
 		88557CAD15F0A10F00D3E6D0 = {
 			isa = PBXGroup;
 			children = (
+				884D3CD515FB9EF100E4EC31 /* Default@2x.png */,
+				884D3CD315FB9EE800E4EC31 /* Default.png */,
+				884D3CD115FB9EC300E4EC31 /* icon_hirez.png */,
+				884D3CCF15FB9EB500E4EC31 /* icon_lowrez.png */,
 				88557CC215F0A10F00D3E6D0 /* flying_rhino_test */,
 				88557CBB15F0A10F00D3E6D0 /* Frameworks */,
 				88557CB915F0A10F00D3E6D0 /* Products */,
@@ -59,7 +81,7 @@
 		88557CB915F0A10F00D3E6D0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				88557CB815F0A10F00D3E6D0 /* flying_rhino_test.app */,
+				88557CB815F0A10F00D3E6D0 /* Flying Rhino.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,6 +112,11 @@
 		88557CC315F0A10F00D3E6D0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				886E885B15FB9FFE00925EE4 /* splash_hirez_orig.png */,
+				886E885C15FB9FFE00925EE4 /* splash_lowrez_orig.png */,
+				884D3CC515FB9E9F00E4EC31 /* icon_appstore_orig.png */,
+				884D3CC615FB9E9F00E4EC31 /* icon_hirez_orig.png */,
+				884D3CC715FB9E9F00E4EC31 /* icon_lowrez_orig.png */,
 				88557CC415F0A10F00D3E6D0 /* flying_rhino_test-Info.plist */,
 				88557CC515F0A10F00D3E6D0 /* InfoPlist.strings */,
 				88557CC815F0A10F00D3E6D0 /* main.m */,
@@ -101,9 +128,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		88557CB715F0A10F00D3E6D0 /* flying_rhino_test */ = {
+		88557CB715F0A10F00D3E6D0 /* Flying Rhino */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88557CD615F0A10F00D3E6D0 /* Build configuration list for PBXNativeTarget "flying_rhino_test" */;
+			buildConfigurationList = 88557CD615F0A10F00D3E6D0 /* Build configuration list for PBXNativeTarget "Flying Rhino" */;
 			buildPhases = (
 				88557CB415F0A10F00D3E6D0 /* Sources */,
 				88557CB515F0A10F00D3E6D0 /* Frameworks */,
@@ -113,9 +140,9 @@
 			);
 			dependencies = (
 			);
-			name = flying_rhino_test;
+			name = "Flying Rhino";
 			productName = flying_rhino_test;
-			productReference = 88557CB815F0A10F00D3E6D0 /* flying_rhino_test.app */;
+			productReference = 88557CB815F0A10F00D3E6D0 /* Flying Rhino.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -139,7 +166,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				88557CB715F0A10F00D3E6D0 /* flying_rhino_test */,
+				88557CB715F0A10F00D3E6D0 /* Flying Rhino */,
 			);
 		};
 /* End PBXProject section */
@@ -151,6 +178,15 @@
 			files = (
 				88557CC715F0A10F00D3E6D0 /* InfoPlist.strings in Resources */,
 				88557CD315F0A10F00D3E6D0 /* ViewController.xib in Resources */,
+				884D3CCA15FB9E9F00E4EC31 /* icon_appstore_orig.png in Resources */,
+				884D3CCB15FB9E9F00E4EC31 /* icon_hirez_orig.png in Resources */,
+				884D3CCC15FB9E9F00E4EC31 /* icon_lowrez_orig.png in Resources */,
+				884D3CD015FB9EB500E4EC31 /* icon_lowrez.png in Resources */,
+				884D3CD215FB9EC300E4EC31 /* icon_hirez.png in Resources */,
+				884D3CD415FB9EE800E4EC31 /* Default.png in Resources */,
+				884D3CD615FB9EF100E4EC31 /* Default@2x.png in Resources */,
+				886E885D15FB9FFE00925EE4 /* splash_hirez_orig.png in Resources */,
+				886E885E15FB9FFE00925EE4 /* splash_lowrez_orig.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +247,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "Flying Rhino";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -231,8 +268,9 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "Flying Rhino";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -257,15 +295,17 @@
 		88557CD815F0A10F00D3E6D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Jesse Bounds (YDN2X668RB)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jesse Bounds (YDN2X668RB)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jesse Bounds";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Distribution: Jesse Bounds";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jesse Bounds";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "flying_rhino_test/flying_rhino_test-Prefix.pch";
 				INFOPLIST_FILE = "flying_rhino_test/flying_rhino_test-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "422A8403-4EAD-415A-BF51-14108A7FE21D";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "422A8403-4EAD-415A-BF51-14108A7FE21D";
+				PROVISIONING_PROFILE = "165BADFC-6C75-40C3-A156-479AA0DFAFE5";
+				"PROVISIONING_PROFILE[sdk=*]" = "165BADFC-6C75-40C3-A156-479AA0DFAFE5";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "165BADFC-6C75-40C3-A156-479AA0DFAFE5";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -282,13 +322,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88557CD615F0A10F00D3E6D0 /* Build configuration list for PBXNativeTarget "flying_rhino_test" */ = {
+		88557CD615F0A10F00D3E6D0 /* Build configuration list for PBXNativeTarget "Flying Rhino" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				88557CD715F0A10F00D3E6D0 /* Debug */,
 				88557CD815F0A10F00D3E6D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
