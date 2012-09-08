@@ -241,10 +241,15 @@
 		88557CD715F0A10F00D3E6D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jesse Bounds (YDN2X668RB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jesse Bounds (YDN2X668RB)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "flying_rhino_test/flying_rhino_test-Prefix.pch";
 				INFOPLIST_FILE = "flying_rhino_test/flying_rhino_test-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "422A8403-4EAD-415A-BF51-14108A7FE21D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "422A8403-4EAD-415A-BF51-14108A7FE21D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -252,10 +257,15 @@
 		88557CD815F0A10F00D3E6D0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Jesse Bounds (YDN2X668RB)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jesse Bounds (YDN2X668RB)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "flying_rhino_test/flying_rhino_test-Prefix.pch";
 				INFOPLIST_FILE = "flying_rhino_test/flying_rhino_test-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "422A8403-4EAD-415A-BF51-14108A7FE21D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "422A8403-4EAD-415A-BF51-14108A7FE21D";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

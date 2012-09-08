@@ -15,11 +15,62 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     // Override point for customization after application launch.
     self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+    
+    NSLog(@"registering...");
+    [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
+                                                                           UIRemoteNotificationTypeSound |
+                                                                           UIRemoteNotificationTypeAlert)];
+    
     return YES;
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+{
+    
+    // Save the token to server
+    
+    //NSString *urlStr = @"http://4gdc.localtunnel.com/register";
+    NSString *urlStr = @"http://flying-pusher.herokuapp.com/register";
+    NSURL *url = [NSURL URLWithString:urlStr];
+    NSMutableURLRequest *req = [NSMutableURLRequest requestWithURL:url];
+    
+    NSMutableData *postBody = [NSMutableData data];
+    [postBody appendData:[[NSString stringWithFormat:@"&token=%@", [deviceToken description]] dataUsingEncoding:NSUTF8StringEncoding]];
+
+    [req setHTTPMethod:@"POST"];
+    [req setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-type"];
+    [req setHTTPBody:postBody];
+
+    NSData *urlData;
+    NSURLResponse *response;
+    NSError *requestError;
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    urlData = [NSURLConnection sendSynchronousRequest:req returningResponse:&response error:&requestError];
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    
+//    NSLog(@"%@", deviceToken);
+//    NSString *urlString = [NSString stringWithFormat:@"http://flying-pusher.herokuapp.com/register?token=%@", [deviceToken description]];
+//    NSString *escapedUrl = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+//    NSLog(@"%@", escapedUrl);
+//
+//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:escapedUrl]
+//                                                           cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
+//                                                       timeoutInterval:10];    
+//    [request setHTTPMethod: @"GET"];
+//
+//    NSData *urlData;
+//    NSURLResponse *response;
+//    NSError *requestError;
+//    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+//    urlData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&requestError];
+//    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+//    
+//    NSLog(@"%@", requestError);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
