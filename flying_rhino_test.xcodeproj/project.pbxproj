@@ -19,6 +19,11 @@
 		88557CCD15F0A10F00D3E6D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88557CCC15F0A10F00D3E6D0 /* AppDelegate.m */; };
 		88557CD015F0A10F00D3E6D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88557CCF15F0A10F00D3E6D0 /* ViewController.m */; };
 		88557CD315F0A10F00D3E6D0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88557CD115F0A10F00D3E6D0 /* ViewController.xib */; };
+		88E93C2115FE3605006F2616 /* icon_appstore_orig.png in Resources */ = {isa = PBXBuildFile; fileRef = 88E93C1C15FE3605006F2616 /* icon_appstore_orig.png */; };
+		88E93C2215FE3605006F2616 /* icon_hirez.png in Resources */ = {isa = PBXBuildFile; fileRef = 88E93C1D15FE3605006F2616 /* icon_hirez.png */; };
+		88E93C2315FE3605006F2616 /* icon_lowrez_orig.png in Resources */ = {isa = PBXBuildFile; fileRef = 88E93C1E15FE3605006F2616 /* icon_lowrez_orig.png */; };
+		88E93C2415FE3605006F2616 /* splash_hirez.png in Resources */ = {isa = PBXBuildFile; fileRef = 88E93C1F15FE3605006F2616 /* splash_hirez.png */; };
+		88E93C2515FE3605006F2616 /* splash_lowrez.png in Resources */ = {isa = PBXBuildFile; fileRef = 88E93C2015FE3605006F2616 /* splash_lowrez.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +44,11 @@
 		88557CCE15F0A10F00D3E6D0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		88557CCF15F0A10F00D3E6D0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		88557CD215F0A10F00D3E6D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		88E93C1C15FE3605006F2616 /* icon_appstore_orig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_appstore_orig.png; sourceTree = "<group>"; };
+		88E93C1D15FE3605006F2616 /* icon_hirez.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_hirez.png; sourceTree = "<group>"; };
+		88E93C1E15FE3605006F2616 /* icon_lowrez_orig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_lowrez_orig.png; sourceTree = "<group>"; };
+		88E93C1F15FE3605006F2616 /* splash_hirez.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_hirez.png; sourceTree = "<group>"; };
+		88E93C2015FE3605006F2616 /* splash_lowrez.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_lowrez.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +112,25 @@
 		88557CC315F0A10F00D3E6D0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				88E93C1B15FE3605006F2616 /* artwork */,
 				88557CC415F0A10F00D3E6D0 /* flying_rhino_test-Info.plist */,
 				88557CC515F0A10F00D3E6D0 /* InfoPlist.strings */,
 				88557CC815F0A10F00D3E6D0 /* main.m */,
 				88557CCA15F0A10F00D3E6D0 /* flying_rhino_test-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88E93C1B15FE3605006F2616 /* artwork */ = {
+			isa = PBXGroup;
+			children = (
+				88E93C1C15FE3605006F2616 /* icon_appstore_orig.png */,
+				88E93C1D15FE3605006F2616 /* icon_hirez.png */,
+				88E93C1E15FE3605006F2616 /* icon_lowrez_orig.png */,
+				88E93C1F15FE3605006F2616 /* splash_hirez.png */,
+				88E93C2015FE3605006F2616 /* splash_lowrez.png */,
+			);
+			path = artwork;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +190,11 @@
 				8821CF1415FE302100EC53B8 /* icon_hirez.png in Resources */,
 				8821CF1615FE303100EC53B8 /* Default.png in Resources */,
 				8821CF1815FE303600EC53B8 /* Default@2x.png in Resources */,
+				88E93C2115FE3605006F2616 /* icon_appstore_orig.png in Resources */,
+				88E93C2215FE3605006F2616 /* icon_hirez.png in Resources */,
+				88E93C2315FE3605006F2616 /* icon_lowrez_orig.png in Resources */,
+				88E93C2415FE3605006F2616 /* splash_hirez.png in Resources */,
+				88E93C2515FE3605006F2616 /* splash_lowrez.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
