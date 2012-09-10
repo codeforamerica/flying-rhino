@@ -14,10 +14,11 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
-				<string>icon_lowrez.png</string>
+				<string>icon_lowrez_orig.png</string>
 				<string>icon_hirez.png</string>
 				<string>Default.png</string>
 				<string>Default@2x.png</string>
+				<string>icon_lowrez.png</string>
 			</array>
 			<key>UIPrerenderedIcon</key>
 			<true/>
