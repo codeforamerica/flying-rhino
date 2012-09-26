@@ -18,28 +18,26 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+}
 
+- (void)startAnimation
+{
     [UIView beginAnimations:@"test" context:nil];
-
+    
     // appears that this defaults to @2x automatically
     NSArray * imageArray  = [[NSArray alloc] initWithObjects:
                              [UIImage imageNamed: @"Default.png"],
                              [UIImage imageNamed: @"Default-2.png"],
                              [UIImage imageNamed: @"Default-3.png"],
                              nil];
-
+    
     imageView.animationImages = imageArray;
     imageView.animationDuration = 0.5;
-    imageView.animationRepeatCount=1000;
-        
-    imageView.contentMode = UIViewContentModeScaleToFill;
-        //[self.view addSubview:imgView];
-    [imageView startAnimating];
     
-        //[imageView setImage:image];
-
+    imageView.contentMode = UIViewContentModeScaleToFill;
+    [imageView startAnimating];
     [UIView commitAnimations];
-    [super viewDidLoad];
 }
 
 - (void)viewDidUnload

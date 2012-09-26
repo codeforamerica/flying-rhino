@@ -19,6 +19,8 @@
 		88557CCD15F0A10F00D3E6D0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88557CCC15F0A10F00D3E6D0 /* AppDelegate.m */; };
 		88557CD015F0A10F00D3E6D0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88557CCF15F0A10F00D3E6D0 /* ViewController.m */; };
 		88557CD315F0A10F00D3E6D0 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88557CD115F0A10F00D3E6D0 /* ViewController.xib */; };
+		88D0B62E16136B4C00652ECF /* splash_iphone5.png in Resources */ = {isa = PBXBuildFile; fileRef = 88D0B62D16136B4C00652ECF /* splash_iphone5.png */; };
+		88D0B63016136B5500652ECF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88D0B62F16136B5500652ECF /* Default-568h@2x.png */; };
 		88E93C2115FE3605006F2616 /* icon_appstore_orig.png in Resources */ = {isa = PBXBuildFile; fileRef = 88E93C1C15FE3605006F2616 /* icon_appstore_orig.png */; };
 		88E93C2215FE3605006F2616 /* icon_hirez.png in Resources */ = {isa = PBXBuildFile; fileRef = 88E93C1D15FE3605006F2616 /* icon_hirez.png */; };
 		88E93C2315FE3605006F2616 /* icon_lowrez_orig.png in Resources */ = {isa = PBXBuildFile; fileRef = 88E93C1E15FE3605006F2616 /* icon_lowrez_orig.png */; };
@@ -48,6 +50,8 @@
 		88557CCE15F0A10F00D3E6D0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		88557CCF15F0A10F00D3E6D0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		88557CD215F0A10F00D3E6D0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		88D0B62D16136B4C00652ECF /* splash_iphone5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash_iphone5.png; sourceTree = "<group>"; };
+		88D0B62F16136B5500652ECF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		88E93C1C15FE3605006F2616 /* icon_appstore_orig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_appstore_orig.png; sourceTree = "<group>"; };
 		88E93C1D15FE3605006F2616 /* icon_hirez.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_hirez.png; sourceTree = "<group>"; };
 		88E93C1E15FE3605006F2616 /* icon_lowrez_orig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_lowrez_orig.png; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 		88557CAD15F0A10F00D3E6D0 = {
 			isa = PBXGroup;
 			children = (
+				88D0B62F16136B5500652ECF /* Default-568h@2x.png */,
 				8821CF1715FE303600EC53B8 /* Default@2x.png */,
 				8821CF1515FE303100EC53B8 /* Default.png */,
 				F2294CED161281190097FF88 /* Default-2.png */,
@@ -136,6 +141,7 @@
 		88E93C1B15FE3605006F2616 /* artwork */ = {
 			isa = PBXGroup;
 			children = (
+				88D0B62D16136B4C00652ECF /* splash_iphone5.png */,
 				88E93C1C15FE3605006F2616 /* icon_appstore_orig.png */,
 				88E93C1D15FE3605006F2616 /* icon_hirez.png */,
 				88E93C1E15FE3605006F2616 /* icon_lowrez_orig.png */,
@@ -211,6 +217,8 @@
 				F2294CF2161281190097FF88 /* Default-2@2x.png in Resources */,
 				F2294CF3161281190097FF88 /* Default-3.png in Resources */,
 				F2294CF4161281190097FF88 /* Default-3@2x.png in Resources */,
+				88D0B62E16136B4C00652ECF /* splash_iphone5.png in Resources */,
+				88D0B63016136B5500652ECF /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,9 +335,9 @@
 				INFOPLIST_FILE = "flying_rhino_test/flying_rhino_test-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "165BADFC-6C75-40C3-A156-479AA0DFAFE5";
-				"PROVISIONING_PROFILE[sdk=*]" = "165BADFC-6C75-40C3-A156-479AA0DFAFE5";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "165BADFC-6C75-40C3-A156-479AA0DFAFE5";
+				PROVISIONING_PROFILE = "3D875C8E-62E3-4CF1-9C8D-F48674D1AE0C";
+				"PROVISIONING_PROFILE[sdk=*]" = "3D875C8E-62E3-4CF1-9C8D-F48674D1AE0C";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3D875C8E-62E3-4CF1-9C8D-F48674D1AE0C";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

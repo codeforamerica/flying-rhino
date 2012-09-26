@@ -12,5 +12,6 @@
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
+- (void)startAnimation;
 
 @end

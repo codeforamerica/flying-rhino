@@ -23,6 +23,8 @@
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     
+    [self.viewController startAnimation];
+    
     NSLog(@"registering...");
     [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeBadge |
                                                                            UIRemoteNotificationTypeSound |
@@ -57,25 +59,6 @@
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     urlData = [NSURLConnection sendSynchronousRequest:req returningResponse:&response error:&requestError];
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-    
-//    NSLog(@"%@", deviceToken);
-//    NSString *urlString = [NSString stringWithFormat:@"http://flying-pusher.herokuapp.com/register?token=%@", [deviceToken description]];
-//    NSString *escapedUrl = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-//    NSLog(@"%@", escapedUrl);
-//
-//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:escapedUrl]
-//                                                           cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData
-//                                                       timeoutInterval:10];    
-//    [request setHTTPMethod: @"GET"];
-//
-//    NSData *urlData;
-//    NSURLResponse *response;
-//    NSError *requestError;
-//    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
-//    urlData = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&requestError];
-//    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
-//    
-//    NSLog(@"%@", requestError);
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -98,6 +81,7 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [self.viewController startAnimation];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
